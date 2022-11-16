@@ -1,0 +1,22 @@
+{
+  "name": "project-am",
+  "version": "1.0.0",
+  "description": "To run this project after cloning, run:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Amelia-Remnant/Project-Am.git"
+  },
+  "author": "Amelia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Amelia-Remnant/Project-Am/issues"
+  },
+  "homepage": "https://github.com/Amelia-Remnant/Project-Am#readme",
+  "dependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
