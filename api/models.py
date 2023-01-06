@@ -4,11 +4,11 @@ from pydantic import BaseModel, validator
 class IncomingReview(BaseModel):
 
     review_text : str
-    rating : int
+    rating : float
 
     @validator("rating")
     def rating_in_range(cls, rating):
-        if rating in range(0,10):
+        if rating >=0 and rating<=10:
             return rating
         else:
             raise ValueError("Rating must be between 1 and 10")

@@ -1,0 +1,10 @@
+@app.post("/company/{company_name}", response_model=CompanyReviews)
+def save_company(company_name,  review: IncomingReview):
+
+    try:
+        review_response = save_review(review, company_name, companies)
+    except CompanyNotFound:
+        companies[company_name] = []
+        review_response = save_review(review, company_name, companies)
+
+    return review_response
